@@ -1,0 +1,55 @@
+{
+  "suite_id": "rollback_suite_20260603_211026",
+  "timestamp": "2026-06-03T21:10:26.731777",
+  "total_experiments": 60,
+  "scenarios": {
+    "clean-rollback": {
+      "bare_execution": {
+        "iterations": 10,
+        "duration_mean": 0.0032,
+        "rollback_success_rate": 0.0,
+        "state_restored_rate": 0.0,
+        "dirty_files_mean": 2.0
+      },
+      "guarded_execution": {
+        "iterations": 10,
+        "duration_mean": 0.0044,
+        "rollback_success_rate": 1.0,
+        "state_restored_rate": 1.0,
+        "dirty_files_mean": 0.0
+      }
+    },
+    "idempotency": {
+      "bare_execution": {
+        "iterations": 10,
+        "duration_mean": 0.0004,
+        "violations_mean": 0.0,
+        "redundant_ops_mean": 3.0,
+        "state_identical_rate": 1.0
+      },
+      "guarded_execution": {
+        "iterations": 10,
+        "duration_mean": 0.0004,
+        "violations_mean": 0.0,
+        "redundant_ops_mean": 0.0,
+        "state_identical_rate": 1.0
+      }
+    },
+    "checkpoint-recovery": {
+      "bare_execution": {
+        "iterations": 10,
+        "duration_mean": 0.0094,
+        "recovery_success_rate": 0.0,
+        "redundant_steps_mean": 3.0,
+        "total_ops_mean": 8.0
+      },
+      "guarded_execution": {
+        "iterations": 10,
+        "duration_mean": 0.0065,
+        "recovery_success_rate": 1.0,
+        "redundant_steps_mean": 0.0,
+        "total_ops_mean": 5.0
+      }
+    }
+  }
+}

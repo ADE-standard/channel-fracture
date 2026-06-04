@@ -1,0 +1,167 @@
+{
+  "experiment": {
+    "id": "concurrent_suite_20260603_210616",
+    "type": "concurrent_conflict_detection",
+    "timestamp": "2026-06-03T21:06:16.595477",
+    "bcp_version": "1.0.0-concurrent",
+    "total_configurations": 18,
+    "scenarios": [
+      "write-write",
+      "read-write",
+      "directory"
+    ],
+    "worker_counts": [
+      2,
+      5,
+      10
+    ],
+    "modes": [
+      "bare_concurrent",
+      "protected_concurrent"
+    ],
+    "iterations_per_config": 5
+  },
+  "comparisons": [
+    {
+      "scenario": "write-write",
+      "workers": 2,
+      "bare_corruption_rate": 67.8,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 67.8,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.0311,
+      "protected_duration": 0.0359,
+      "duration_overhead": 0.0048,
+      "duration_overhead_pct": 15.43
+    },
+    {
+      "scenario": "write-write",
+      "workers": 5,
+      "bare_corruption_rate": 95.68,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 95.68,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.0453,
+      "protected_duration": 0.0854,
+      "duration_overhead": 0.0401,
+      "duration_overhead_pct": 88.52
+    },
+    {
+      "scenario": "write-write",
+      "workers": 10,
+      "bare_corruption_rate": 98.64,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 98.64,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.0661,
+      "protected_duration": 0.1627,
+      "duration_overhead": 0.0966,
+      "duration_overhead_pct": 146.14
+    },
+    {
+      "scenario": "read-write",
+      "workers": 2,
+      "bare_corruption_rate": 34.6,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 34.6,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.0359,
+      "protected_duration": 0.0356,
+      "duration_overhead": -0.0003,
+      "duration_overhead_pct": -0.84
+    },
+    {
+      "scenario": "read-write",
+      "workers": 5,
+      "bare_corruption_rate": 31.9333,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 31.9333,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.0372,
+      "protected_duration": 0.0367,
+      "duration_overhead": -0.0005,
+      "duration_overhead_pct": -1.34
+    },
+    {
+      "scenario": "read-write",
+      "workers": 10,
+      "bare_corruption_rate": 9.12,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 9.12,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.045,
+      "protected_duration": 0.0412,
+      "duration_overhead": -0.0038,
+      "duration_overhead_pct": -8.44
+    },
+    {
+      "scenario": "directory",
+      "workers": 2,
+      "bare_corruption_rate": 0.0,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 0.0,
+      "corruption_reduction_pct": 0,
+      "bare_duration": 0.0078,
+      "protected_duration": 0.0084,
+      "duration_overhead": 0.0006,
+      "duration_overhead_pct": 7.69
+    },
+    {
+      "scenario": "directory",
+      "workers": 5,
+      "bare_corruption_rate": 1.4667,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 1.4667,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.01,
+      "protected_duration": 0.0123,
+      "duration_overhead": 0.0023,
+      "duration_overhead_pct": 23.0
+    },
+    {
+      "scenario": "directory",
+      "workers": 10,
+      "bare_corruption_rate": 2.7333,
+      "protected_corruption_rate": 0.0,
+      "corruption_reduction": 2.7333,
+      "corruption_reduction_pct": 100.0,
+      "bare_duration": 0.0146,
+      "protected_duration": 0.0212,
+      "duration_overhead": 0.0066,
+      "duration_overhead_pct": 45.21
+    }
+  ],
+  "summary": {
+    "bare_concurrent": {
+      "avg_corruption_rate": 37.997,
+      "max_corruption_rate": 98.64,
+      "min_corruption_rate": 0.0
+    },
+    "protected_concurrent": {
+      "avg_corruption_rate": 0.0,
+      "max_corruption_rate": 0.0,
+      "min_corruption_rate": 0.0
+    },
+    "protection_effectiveness": {
+      "avg_corruption_reduction": 37.997,
+      "avg_duration_overhead_seconds": 0.0163
+    },
+    "per_scenario": {
+      "write-write": {
+        "bare_avg_corruption_rate": 87.3733,
+        "protected_avg_corruption_rate": 0.0,
+        "reduction": 87.3733
+      },
+      "read-write": {
+        "bare_avg_corruption_rate": 25.2178,
+        "protected_avg_corruption_rate": 0.0,
+        "reduction": 25.2178
+      },
+      "directory": {
+        "bare_avg_corruption_rate": 1.4,
+        "protected_avg_corruption_rate": 0.0,
+        "reduction": 1.4
+      }
+    }
+  }
+}
