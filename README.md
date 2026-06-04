@@ -31,6 +31,7 @@ python demo_channel_fracture.py
 - 🔍 **检测**：CADVP CC-0 验证器捕获写入失败
 - 🔧 **修复**：动态注册机制绕过守卫
 - ✅ **成功**：Target Agent 成功接收持久化内存
+- 🛡️ **ADE 三级门禁**：L1 自验 → L2 证据 → L3 复核 全链路验证交付质量
 
 ## 知识产权声明
 
@@ -52,7 +53,7 @@ python demo_channel_fracture.py
 
 - **`agents/`** — 模拟 Scheduler Agent（定时触发写入）和 Target Agent（带持久化内存）
 - **`memory/`** — 持久化内存实现，含 `skip_memory=True` 守卫和内存隔离逻辑
-- **`cadvp/`** — CADVP 跨代理交付验证协议，含 CC-0 确认检查
+- **`cadvp/`** — CADVP 跨代理交付验证协议，含 CC-0 确认检查 + ADE 三级门禁体系（L1 自验/L2 证据/L3 复核）
 - **`demo_channel_fracture.py`** — 主演示脚本，一键复现 Channel Fracture 现象
 
 ## 引用

@@ -53,9 +53,79 @@ CADVP 定义了多个确认级别：
 
 端到端验证层，验证数据是否最终影响了预期的系统行为。
 
-## 4. 修复机制
+## 4. ADE 三级门禁体系
 
-### 4.1 动态通道注册
+ADE Three-Gate System 在 CC-0 交付验证之上增加了三层独立交付质量门禁：
+
+### 4.1 L1 Gate — 自验门禁 (Self-Verification)
+
+由交付 Agent 对自己即将交付的内容执行自检：
+
+| 检查 | 说明 |
+|------|------|
+| 存在性 (Existence) | 交付值非空 |
+| 完整性 (Completeness) | 必需字段全部存在 |
+| 一致性 (Consistency) | 值格式和编码无异常 |
+
+自验通过后，生成内容哈希用于后续追踪。
+
+### 4.2 L2 Gate — 证据门禁 (Evidence Verification)
+
+验证交付是否附带完整的证据链：
+
+| 检查 | 说明 |
+|------|------|
+| 证据存在 (Evidence Exists) | 交付附带执行日志 |
+| L1 报告 (L1 Report) | L1 自验报告已附加到交付 |
+| 可追溯 (Traceability) | 内容哈希可独立验证 |
+
+### 4.3 L3 Gate — 复核门禁 (Cross-Review)
+
+由独立 Reviewer Agent 执行交叉验证：
+
+| 检查 | 说明 |
+|------|------|
+| L1 有效性 (L1 Validation) | 验证 L1 自验是否真实通过 |
+| L2 有效性 (L2 Validation) | 验证 L2 证据是否完备 |
+| 数据完整性 (Data Integrity) | 独立重复数据完整性检查 |
+| 哈希一致性 (Hash Consistency) | 内容哈希与 L1 记录一致 |
+
+L3 输出质量评分 (0.0~1.0)，低于阈值时拒绝交付。
+
+### 4.4 三级门禁流程图
+
+```
+交付内容 → [L1 自验] → [L2 证据] → [L3 复核] → 交付确认
+              ↑              ↑             ↑
+          Agent自检     证据日志     独立Reviewer
+```
+
+### 4.5 实现接口
+
+```python
+class L1SelfVerifier:
+    def verify(agent_name, key, value, required_fields) -> dict
+    def get_log() -> list
+    def get_summary() -> dict
+
+class L2EvidenceVerifier:
+    def verify(agent_name, key, value, evidence_log) -> dict
+    def get_log() -> list
+    def get_summary() -> dict
+
+class L3CrossReviewer:
+    def review(original_agent, key, value, l1_report, l2_report) -> dict
+    def get_log() -> list
+    def get_summary() -> dict
+
+class ThreeGateSystem:
+    def execute_all_gates(...) -> dict
+    def get_summary() -> dict
+```
+
+## 5. 修复机制
+
+### 5.1 动态通道注册
 
 当 CC-0 检测到 Channel Fracture 时，通过动态注册专用写入通道来绕过 `skip_memory` 守卫：
 
@@ -66,7 +136,7 @@ CADVP 定义了多个确认级别：
 4. 再次 CC-0 验证确认成功
 ```
 
-### 4.2 通道生命周期
+### 5.2 通道生命周期
 
 - **创建:** 检测到 Fracture 时动态创建
 - **注册:** 添加到目标代理的允许通道列表
@@ -74,9 +144,9 @@ CADVP 定义了多个确认级别：
 - **注销:** 任务完成后可选择注销通道
 - **审计:** 所有通道操作记录在案
 
-## 5. 数据模型
+## 6. 数据模型
 
-### 5.1 写入记录 (Write Record)
+### 6.1 写入记录 (Write Record)
 
 ```json
 {
@@ -90,7 +160,7 @@ CADVP 定义了多个确认级别：
 }
 ```
 
-### 5.2 验证结果 (Verification Result)
+### 6.2 验证结果 (Verification Result)
 
 ```json
 {
@@ -105,7 +175,7 @@ CADVP 定义了多个确认级别：
 }
 ```
 
-### 5.3 交付日志 (Delivery Log)
+### 6.3 交付日志 (Delivery Log)
 
 ```json
 {
@@ -121,9 +191,9 @@ CADVP 定义了多个确认级别：
 }
 ```
 
-## 6. 实现接口
+## 7. 实现接口
 
-### 6.1 CC0Verifier
+### 7.1 CC0Verifier
 
 ```python
 class CC0Verifier:
@@ -133,7 +203,15 @@ class CC0Verifier:
     def get_verification_summary() -> dict
 ```
 
-### 6.2 DeliveryProtocol
+### 7.2 DeliveryProtocol
+
+### 7.3 ThreeGateSystem
+
+```python
+class ThreeGateSystem:
+    def execute_all_gates(agent_name, reviewer_name, key, value) -> dict
+    def get_summary() -> dict
+```
 
 ```python
 class DeliveryProtocol:
@@ -141,7 +219,7 @@ class DeliveryProtocol:
     def get_delivery_summary() -> dict
 ```
 
-## 7. 实验结果
+## 8. 实验结果
 
 CADVP 在以下实验场景中进行了验证：
 
@@ -153,7 +231,7 @@ CADVP 在以下实验场景中进行了验证：
 
 详见 `experiments/results/` 目录。
 
-## 8. 安全考量
+## 9. 安全考量
 
 - 通道注册应受到访问控制限制
 - 修复通道不应被滥用为绕过安全机制的后门

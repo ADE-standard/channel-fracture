@@ -24,8 +24,8 @@ class DeliveryProtocol:
     5. 再次验证确认修复成功
     """
 
-    def __init__(self):
-        self.verifier = CC0Verifier()
+    def __init__(self, verifier: Optional[CC0Verifier] = None):
+        self.verifier = verifier if verifier is not None else CC0Verifier()
         self._delivery_log: list = []
 
     def deliver_with_verification(self, scheduler_agent, target_agent,
