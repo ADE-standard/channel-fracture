@@ -1,0 +1,1924 @@
+{
+  "experiment": {
+    "id": "real_exp_report-gen-real_20260603_202944",
+    "task_id": "report-gen-real",
+    "task_name": "Markdown Report Generation",
+    "task_category": "report-gen",
+    "groups": [
+      "A",
+      "B",
+      "C"
+    ],
+    "iterations_per_group": 10,
+    "timestamp": "2026-06-03T20:29:44.775968",
+    "version": "1.0.0-real",
+    "workdir": "/tmp/bcp-real-exp",
+    "type": "real"
+  },
+  "task_definition": {
+    "task_id": "report-gen-real",
+    "name": "Markdown Report Generation",
+    "category": "report-gen",
+    "description": "Scan for all Markdown files in the bcp-core project, generate a report sorted by file size (descending), and write it as a formatted text file.",
+    "criteria": [
+      "report_exists",
+      "has_header",
+      "count_in_report",
+      "has_table",
+      "has_summary",
+      "sufficient_length"
+    ],
+    "expected_files": [
+      "output/md_report.txt"
+    ],
+    "complexity": "medium"
+  },
+  "runs": [
+    {
+      "run_id": "real_A_report-gen-real_001",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:39.939416",
+      "duration_seconds": 0.09236,
+      "execution_duration": 0.021505,
+      "setup_duration": 0.070551,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_002",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.053931",
+      "duration_seconds": 0.092563,
+      "execution_duration": 0.02435,
+      "setup_duration": 0.067918,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_003",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.168385",
+      "duration_seconds": 0.092603,
+      "execution_duration": 0.021187,
+      "setup_duration": 0.071123,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_004",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.283186",
+      "duration_seconds": 0.093518,
+      "execution_duration": 0.022507,
+      "setup_duration": 0.070642,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_005",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.402074",
+      "duration_seconds": 0.094851,
+      "execution_duration": 0.022631,
+      "setup_duration": 0.071849,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_006",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.515629",
+      "duration_seconds": 0.09216,
+      "execution_duration": 0.02206,
+      "setup_duration": 0.069809,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_007",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.627240",
+      "duration_seconds": 0.089963,
+      "execution_duration": 0.022202,
+      "setup_duration": 0.067415,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_008",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.744777",
+      "duration_seconds": 0.095493,
+      "execution_duration": 0.022143,
+      "setup_duration": 0.072804,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_009",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.870432",
+      "duration_seconds": 0.103169,
+      "execution_duration": 0.020912,
+      "setup_duration": 0.081854,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_report-gen-real_010",
+      "group": "A",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:40.986957",
+      "duration_seconds": 0.093637,
+      "execution_duration": 0.021762,
+      "setup_duration": 0.071578,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1130,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_001",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.110822",
+      "duration_seconds": 0.101402,
+      "execution_duration": 0.022219,
+      "setup_duration": 0.076284,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0025987625122070312,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_001/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_002",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.229035",
+      "duration_seconds": 0.096335,
+      "execution_duration": 0.022506,
+      "setup_duration": 0.070807,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0026400089263916016,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_002/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_003",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.348367",
+      "duration_seconds": 0.09602,
+      "execution_duration": 0.021409,
+      "setup_duration": 0.071095,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003187894821166992,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_003/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_004",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.467145",
+      "duration_seconds": 0.096661,
+      "execution_duration": 0.02188,
+      "setup_duration": 0.071436,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003031015396118164,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_004/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_005",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.591893",
+      "duration_seconds": 0.099968,
+      "execution_duration": 0.023068,
+      "setup_duration": 0.07338,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0031707286834716797,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_005/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_006",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.722657",
+      "duration_seconds": 0.105923,
+      "execution_duration": 0.024604,
+      "setup_duration": 0.077538,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0034317970275878906,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_006/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_007",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.855284",
+      "duration_seconds": 0.105759,
+      "execution_duration": 0.031121,
+      "setup_duration": 0.070087,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.004148006439208984,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_007/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_008",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:41.984684",
+      "duration_seconds": 0.107281,
+      "execution_duration": 0.021964,
+      "setup_duration": 0.081499,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003481149673461914,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_008/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_009",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:42.107049",
+      "duration_seconds": 0.096364,
+      "execution_duration": 0.023469,
+      "setup_duration": 0.069767,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002746105194091797,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_009/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_report-gen-real_010",
+      "group": "B",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:42.235674",
+      "duration_seconds": 0.105253,
+      "execution_duration": 0.022622,
+      "setup_duration": 0.077697,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.004578590393066406,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_report-gen-real_010/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1430,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_001",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:42.454449",
+      "duration_seconds": 0.1966,
+      "execution_duration": 0.022574,
+      "setup_duration": 0.072837,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0027670860290527344,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_001/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.07528519630432129,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_001/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02275562286376953,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_001/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_002",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:42.666081",
+      "duration_seconds": 0.189201,
+      "execution_duration": 0.022882,
+      "setup_duration": 0.074543,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0027687549591064453,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_002/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06596517562866211,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_002/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02270793914794922,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_002/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_003",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:42.882590",
+      "duration_seconds": 0.191424,
+      "execution_duration": 0.022927,
+      "setup_duration": 0.0763,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0029764175415039062,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_003/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06336164474487305,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_003/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02544093132019043,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_003/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_004",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:43.081530",
+      "duration_seconds": 0.177662,
+      "execution_duration": 0.022277,
+      "setup_duration": 0.07039,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0034372806549072266,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_004/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.05897784233093262,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_004/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.022214651107788086,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_004/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_005",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:43.286384",
+      "duration_seconds": 0.182663,
+      "execution_duration": 0.022293,
+      "setup_duration": 0.072401,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0032646656036376953,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_005/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.0628366470336914,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_005/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.021550416946411133,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_005/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_006",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:43.492485",
+      "duration_seconds": 0.183953,
+      "execution_duration": 0.021747,
+      "setup_duration": 0.073083,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002933979034423828,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_006/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06379151344299316,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_006/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02196526527404785,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_006/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_007",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:43.709509",
+      "duration_seconds": 0.194486,
+      "execution_duration": 0.021994,
+      "setup_duration": 0.070036,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0030748844146728516,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_007/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.060842275619506836,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_007/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.03816723823547363,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_007/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_008",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:44.361423",
+      "duration_seconds": 0.629003,
+      "execution_duration": 0.021455,
+      "setup_duration": 0.073336,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002850055694580078,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_008/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06041264533996582,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_008/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.4706428050994873,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_008/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_009",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:44.562287",
+      "duration_seconds": 0.178036,
+      "execution_duration": 0.021902,
+      "setup_duration": 0.070886,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0029153823852539062,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_009/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.05973362922668457,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_009/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02214527130126953,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_009/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_report-gen-real_010",
+      "group": "C",
+      "task_id": "report-gen-real",
+      "timestamp": "2026-06-03T20:29:44.775832",
+      "duration_seconds": 0.189785,
+      "execution_duration": 0.022574,
+      "setup_duration": 0.077254,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "report_exists": true,
+        "has_header": true,
+        "count_in_report": true,
+        "has_table": true,
+        "has_summary": true,
+        "sufficient_length": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003204822540283203,
+          "understanding": {
+            "task_id": "report-gen-real",
+            "task_name": "Markdown Report Generation",
+            "category": "report-gen",
+            "expected_files": [
+              "output/md_report.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "report_exists",
+              "has_header",
+              "count_in_report",
+              "has_table",
+              "has_summary",
+              "sufficient_length"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_010/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06413578987121582,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_report-gen-real_010/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.022243022918701172,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_report-gen-real_010/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "report_exists": true,
+              "has_header": true,
+              "count_in_report": true,
+              "has_table": true,
+              "has_summary": true,
+              "sufficient_length": true
+            },
+            "success": true,
+            "details": {
+              "actual_md_count": 1,
+              "report_lines": 16
+            }
+          }
+        }
+      },
+      "execution_output": "Report generated: 1 files listed\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"report_exists\": true,\n    \"has_header\": true,\n    \"count_in_report\": true,\n    \"has_table\": true,\n    \"has_summary\": true,\n    \"sufficient_length\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"actual_md_count\": 1,\n    \"report_lines\": 16\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2180,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    }
+  ],
+  "total_runs": 30,
+  "summary": {
+    "A": {
+      "run_count": 10,
+      "avg_duration": 0.094,
+      "min_duration": 0.09,
+      "max_duration": 0.1032,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 0.9,
+      "avg_criteria_satisfaction": 1.0
+    },
+    "B": {
+      "run_count": 10,
+      "avg_duration": 0.1011,
+      "min_duration": 0.096,
+      "max_duration": 0.1073,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 0.95,
+      "avg_criteria_satisfaction": 1.0
+    },
+    "C": {
+      "run_count": 10,
+      "avg_duration": 0.2313,
+      "min_duration": 0.1777,
+      "max_duration": 0.629,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 1.0,
+      "avg_criteria_satisfaction": 1.0
+    }
+  }
+}

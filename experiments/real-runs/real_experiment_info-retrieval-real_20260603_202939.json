@@ -1,0 +1,1893 @@
+{
+  "experiment": {
+    "id": "real_exp_info-retrieval-real_20260603_202939",
+    "task_id": "info-retrieval-real",
+    "task_name": "Directory Statistics",
+    "task_category": "info-retrieval",
+    "groups": [
+      "A",
+      "B",
+      "C"
+    ],
+    "iterations_per_group": 10,
+    "timestamp": "2026-06-03T20:29:39.823986",
+    "version": "1.0.0-real",
+    "workdir": "/tmp/bcp-real-exp",
+    "type": "real"
+  },
+  "task_definition": {
+    "task_id": "info-retrieval-real",
+    "name": "Directory Statistics",
+    "category": "info-retrieval",
+    "description": "Scan the bcp-core source directory, count Python files and total lines, and write a JSON statistics report.",
+    "criteria": [
+      "stats_file_exists",
+      "valid_json",
+      "file_count_correct",
+      "line_count_correct",
+      "has_file_details"
+    ],
+    "expected_files": [
+      "output/stats.json"
+    ],
+    "complexity": "medium"
+  },
+  "runs": [
+    {
+      "run_id": "real_A_info-retrieval-real_001",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:35.477436",
+      "duration_seconds": 0.096748,
+      "execution_duration": 0.022929,
+      "setup_duration": 0.0734,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_002",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:35.596386",
+      "duration_seconds": 0.096382,
+      "execution_duration": 0.024672,
+      "setup_duration": 0.071287,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_003",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:35.716641",
+      "duration_seconds": 0.09534,
+      "execution_duration": 0.023597,
+      "setup_duration": 0.071359,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_004",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:35.830926",
+      "duration_seconds": 0.092067,
+      "execution_duration": 0.021982,
+      "setup_duration": 0.069648,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_005",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:35.949148",
+      "duration_seconds": 0.095348,
+      "execution_duration": 0.022466,
+      "setup_duration": 0.072481,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_006",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.067923",
+      "duration_seconds": 0.096262,
+      "execution_duration": 0.022284,
+      "setup_duration": 0.073612,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_007",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.184305",
+      "duration_seconds": 0.093903,
+      "execution_duration": 0.022803,
+      "setup_duration": 0.070723,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_008",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.299280",
+      "duration_seconds": 0.093256,
+      "execution_duration": 0.022423,
+      "setup_duration": 0.070475,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_009",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.414073",
+      "duration_seconds": 0.092225,
+      "execution_duration": 0.022477,
+      "setup_duration": 0.069354,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_info-retrieval-real_010",
+      "group": "A",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.528812",
+      "duration_seconds": 0.092479,
+      "execution_duration": 0.021734,
+      "setup_duration": 0.070295,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {},
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 1069,
+      "quality_score": 0.9,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_001",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.650459",
+      "duration_seconds": 0.098171,
+      "execution_duration": 0.02232,
+      "setup_duration": 0.072783,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0026445388793945312,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_001/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_002",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.782138",
+      "duration_seconds": 0.108008,
+      "execution_duration": 0.022767,
+      "setup_duration": 0.082006,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002924203872680664,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_002/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_003",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:36.905124",
+      "duration_seconds": 0.100192,
+      "execution_duration": 0.022382,
+      "setup_duration": 0.074674,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0028166770935058594,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_003/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_004",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.027236",
+      "duration_seconds": 0.098841,
+      "execution_duration": 0.022268,
+      "setup_duration": 0.073094,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0030977725982666016,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_004/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_005",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.152514",
+      "duration_seconds": 0.100281,
+      "execution_duration": 0.02298,
+      "setup_duration": 0.073653,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003306150436401367,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_005/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_006",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.293571",
+      "duration_seconds": 0.118446,
+      "execution_duration": 0.022925,
+      "setup_duration": 0.092138,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0030372142791748047,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_006/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_007",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.413409",
+      "duration_seconds": 0.097339,
+      "execution_duration": 0.023058,
+      "setup_duration": 0.071271,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0027310848236083984,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_007/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_008",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.531129",
+      "duration_seconds": 0.095009,
+      "execution_duration": 0.022305,
+      "setup_duration": 0.069475,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0028922557830810547,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_008/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_009",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.651186",
+      "duration_seconds": 0.096874,
+      "execution_duration": 0.024388,
+      "setup_duration": 0.069206,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002988576889038086,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_009/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_info-retrieval-real_010",
+      "group": "B",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.779622",
+      "duration_seconds": 0.105736,
+      "execution_duration": 0.025918,
+      "setup_duration": 0.076165,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003266572952270508,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_info-retrieval-real_010/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1369,
+      "quality_score": 0.95,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_001",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:37.985234",
+      "duration_seconds": 0.180846,
+      "execution_duration": 0.022783,
+      "setup_duration": 0.070583,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002415895462036133,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_001/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.05922698974609375,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_001/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02552008628845215,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_001/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_002",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:38.185645",
+      "duration_seconds": 0.178755,
+      "execution_duration": 0.021312,
+      "setup_duration": 0.070097,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002684354782104492,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_002/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.062135934829711914,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_002/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.022207975387573242,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_002/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_003",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:38.390153",
+      "duration_seconds": 0.182223,
+      "execution_duration": 0.021979,
+      "setup_duration": 0.073225,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0034863948822021484,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_003/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.060883283615112305,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_003/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02234816551208496,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_003/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_004",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:38.586464",
+      "duration_seconds": 0.174026,
+      "execution_duration": 0.022149,
+      "setup_duration": 0.067088,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0030040740966796875,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_004/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.059195518493652344,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_004/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.022234201431274414,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_004/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_005",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:38.804506",
+      "duration_seconds": 0.194806,
+      "execution_duration": 0.027553,
+      "setup_duration": 0.070944,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.004504680633544922,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_005/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06815505027770996,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_005/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02322864532470703,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_005/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_006",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:39.006615",
+      "duration_seconds": 0.179214,
+      "execution_duration": 0.022873,
+      "setup_duration": 0.067026,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0038373470306396484,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_006/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06132316589355469,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_006/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.023723125457763672,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_006/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_007",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:39.208882",
+      "duration_seconds": 0.180062,
+      "execution_duration": 0.021832,
+      "setup_duration": 0.06938,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0029342174530029297,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_007/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06040620803833008,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_007/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02508997917175293,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_007/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_008",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:39.408230",
+      "duration_seconds": 0.17746,
+      "execution_duration": 0.021449,
+      "setup_duration": 0.069917,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002885103225708008,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_008/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06035590171813965,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_008/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.022564172744750977,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_008/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_009",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:39.613253",
+      "duration_seconds": 0.179854,
+      "execution_duration": 0.021971,
+      "setup_duration": 0.070753,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002951383590698242,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_009/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.0617830753326416,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_009/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.022064208984375,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_009/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_info-retrieval-real_010",
+      "group": "C",
+      "task_id": "info-retrieval-real",
+      "timestamp": "2026-06-03T20:29:39.823561",
+      "duration_seconds": 0.184288,
+      "execution_duration": 0.025569,
+      "setup_duration": 0.070595,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "stats_file_exists": true,
+        "valid_json": true,
+        "file_count_correct": true,
+        "line_count_correct": true,
+        "has_file_details": true
+      },
+      "criteria_passed_count": 5,
+      "criteria_total_count": 5,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003106355667114258,
+          "understanding": {
+            "task_id": "info-retrieval-real",
+            "task_name": "Directory Statistics",
+            "category": "info-retrieval",
+            "expected_files": [
+              "output/stats.json"
+            ],
+            "criteria_count": 5,
+            "criteria": [
+              "stats_file_exists",
+              "valid_json",
+              "file_count_correct",
+              "line_count_correct",
+              "has_file_details"
+            ],
+            "complexity": "medium"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_010/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.05904197692871094,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_010/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.025623083114624023,
+          "l1_passed": true,
+          "l2_evidence_count": 1,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_info-retrieval-real_010/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "stats_file_exists": true,
+              "valid_json": true,
+              "file_count_correct": true,
+              "line_count_correct": true,
+              "has_file_details": true
+            },
+            "success": true,
+            "details": {
+              "expected_count": 6,
+              "reported_count": 6,
+              "expected_lines": 1597,
+              "reported_lines": 1597,
+              "line_diff": 0
+            }
+          }
+        }
+      },
+      "execution_output": "Found 6 Python files, 1597 total lines\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"stats_file_exists\": true,\n    \"valid_json\": true,\n    \"file_count_correct\": true,\n    \"line_count_correct\": true,\n    \"has_file_details\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_count\": 6,\n    \"reported_count\": 6,\n    \"expected_lines\": 1597,\n    \"reported_lines\": 1597,\n    \"line_diff\": 0\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2119,
+      "quality_score": 1.0,
+      "artifacts_count": 5,
+      "self_inspection_passed": true
+    }
+  ],
+  "total_runs": 30,
+  "summary": {
+    "A": {
+      "run_count": 10,
+      "avg_duration": 0.0944,
+      "min_duration": 0.0921,
+      "max_duration": 0.0967,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 0.9,
+      "avg_criteria_satisfaction": 1.0
+    },
+    "B": {
+      "run_count": 10,
+      "avg_duration": 0.1019,
+      "min_duration": 0.095,
+      "max_duration": 0.1184,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 0.95,
+      "avg_criteria_satisfaction": 1.0
+    },
+    "C": {
+      "run_count": 10,
+      "avg_duration": 0.1812,
+      "min_duration": 0.174,
+      "max_duration": 0.1948,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 1.0,
+      "avg_criteria_satisfaction": 1.0
+    }
+  }
+}

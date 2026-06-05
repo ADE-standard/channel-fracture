@@ -1,0 +1,1996 @@
+{
+  "experiment": {
+    "id": "real_exp_file-ops-real_20260603_202935",
+    "task_id": "file-ops-real",
+    "task_name": "File Create-Write-Verify",
+    "task_category": "file-ops",
+    "groups": [
+      "A",
+      "B",
+      "C"
+    ],
+    "iterations_per_group": 10,
+    "timestamp": "2026-06-03T20:29:35.356065",
+    "version": "1.0.0-real",
+    "workdir": "/tmp/bcp-real-exp",
+    "type": "real"
+  },
+  "task_definition": {
+    "task_id": "file-ops-real",
+    "name": "File Create-Write-Verify",
+    "category": "file-ops",
+    "description": "Create a directory structure, write a text file with specific content, compute its MD5 checksum, and write the checksum to a separate file.",
+    "criteria": [
+      "file_exists",
+      "content_correct",
+      "checksum_exists",
+      "checksum_correct",
+      "manifest_exists",
+      "manifest_nonempty"
+    ],
+    "expected_files": [
+      "output/hello.txt",
+      "checksums/hello.md5",
+      "output/manifest.txt"
+    ],
+    "complexity": "low"
+  },
+  "runs": [
+    {
+      "run_id": "real_A_file-ops-real_001",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:30.848549",
+      "duration_seconds": 0.104755,
+      "execution_duration": 0.022545,
+      "setup_duration": 0.081879,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_002",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:30.966237",
+      "duration_seconds": 0.095277,
+      "execution_duration": 0.021386,
+      "setup_duration": 0.073586,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_003",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.080195",
+      "duration_seconds": 0.091354,
+      "execution_duration": 0.021374,
+      "setup_duration": 0.069701,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_004",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.219151",
+      "duration_seconds": 0.113502,
+      "execution_duration": 0.044703,
+      "setup_duration": 0.06837,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_005",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.338104",
+      "duration_seconds": 0.095659,
+      "execution_duration": 0.0218,
+      "setup_duration": 0.073557,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_006",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.469933",
+      "duration_seconds": 0.108964,
+      "execution_duration": 0.038614,
+      "setup_duration": 0.070026,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_007",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.587191",
+      "duration_seconds": 0.091221,
+      "execution_duration": 0.021631,
+      "setup_duration": 0.069195,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_008",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.703855",
+      "duration_seconds": 0.09392,
+      "execution_duration": 0.022123,
+      "setup_duration": 0.07141,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_009",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.823066",
+      "duration_seconds": 0.096303,
+      "execution_duration": 0.021672,
+      "setup_duration": 0.074275,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_A_file-ops-real_010",
+      "group": "A",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:31.937087",
+      "duration_seconds": 0.091734,
+      "execution_duration": 0.021597,
+      "setup_duration": 0.069729,
+      "phases_completed": 0,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {},
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "none",
+      "tokens_used": 963,
+      "quality_score": 0.9,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_001",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.055387",
+      "duration_seconds": 0.095978,
+      "execution_duration": 0.022028,
+      "setup_duration": 0.070826,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0028467178344726562,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_001/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_002",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.199835",
+      "duration_seconds": 0.119923,
+      "execution_duration": 0.02511,
+      "setup_duration": 0.091897,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0026137828826904297,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_002/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_003",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.316607",
+      "duration_seconds": 0.09476,
+      "execution_duration": 0.022229,
+      "setup_duration": 0.069529,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0027337074279785156,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_003/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_004",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.435770",
+      "duration_seconds": 0.095657,
+      "execution_duration": 0.021527,
+      "setup_duration": 0.070404,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003351926803588867,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_004/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_005",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.556794",
+      "duration_seconds": 0.096896,
+      "execution_duration": 0.023302,
+      "setup_duration": 0.070287,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002995729446411133,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_005/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_006",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.692604",
+      "duration_seconds": 0.112308,
+      "execution_duration": 0.023365,
+      "setup_duration": 0.08531,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0032837390899658203,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_006/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_007",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.826036",
+      "duration_seconds": 0.108922,
+      "execution_duration": 0.025794,
+      "setup_duration": 0.07926,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0034406185150146484,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_007/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_008",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:32.951158",
+      "duration_seconds": 0.101841,
+      "execution_duration": 0.022526,
+      "setup_duration": 0.075959,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0030739307403564453,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_008/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_009",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:33.072210",
+      "duration_seconds": 0.098164,
+      "execution_duration": 0.022548,
+      "setup_duration": 0.072148,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003130674362182617,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_009/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_B_file-ops-real_010",
+      "group": "B",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:33.195395",
+      "duration_seconds": 0.100055,
+      "execution_duration": 0.022395,
+      "setup_duration": 0.074398,
+      "phases_completed": 1,
+      "consultation_rounds": 0,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002956867218017578,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_B_file-ops-real_010/bcp_phases/phase1/confirmation.json"
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "phase1-only",
+      "tokens_used": 1263,
+      "quality_score": 0.95,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_001",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:33.406620",
+      "duration_seconds": 0.186368,
+      "execution_duration": 0.023365,
+      "setup_duration": 0.073933,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002739429473876953,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_001/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.062197208404541016,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_001/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02383732795715332,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_001/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_002",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:33.623197",
+      "duration_seconds": 0.190083,
+      "execution_duration": 0.023069,
+      "setup_duration": 0.077795,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0026955604553222656,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_002/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.0628044605255127,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_002/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.0234220027923584,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_002/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_003",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:33.846192",
+      "duration_seconds": 0.199889,
+      "execution_duration": 0.022176,
+      "setup_duration": 0.080915,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003705739974975586,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_003/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06840324401855469,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_003/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.024360179901123047,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_003/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_004",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:34.055371",
+      "duration_seconds": 0.185473,
+      "execution_duration": 0.022123,
+      "setup_duration": 0.071049,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003098726272583008,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_004/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06565713882446289,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_004/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.023212909698486328,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_004/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_005",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:34.272537",
+      "duration_seconds": 0.193653,
+      "execution_duration": 0.023175,
+      "setup_duration": 0.075872,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003226041793823242,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_005/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06560897827148438,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_005/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.025397062301635742,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_005/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_006",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:34.490162",
+      "duration_seconds": 0.193444,
+      "execution_duration": 0.023116,
+      "setup_duration": 0.077023,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003594636917114258,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_006/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06443238258361816,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_006/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02484917640686035,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_006/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_007",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:34.715005",
+      "duration_seconds": 0.197547,
+      "execution_duration": 0.024374,
+      "setup_duration": 0.075593,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0034966468811035156,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_007/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06615304946899414,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_007/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02745342254638672,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_007/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_008",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:34.933524",
+      "duration_seconds": 0.195422,
+      "execution_duration": 0.022779,
+      "setup_duration": 0.080402,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.003045797348022461,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_008/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06493830680847168,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_008/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.02389812469482422,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_008/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_009",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:35.143436",
+      "duration_seconds": 0.186097,
+      "execution_duration": 0.022911,
+      "setup_duration": 0.07334,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.002851247787475586,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_009/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.062201499938964844,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_009/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.024437427520751953,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_009/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    },
+    {
+      "run_id": "real_C_file-ops-real_010",
+      "group": "C",
+      "task_id": "file-ops-real",
+      "timestamp": "2026-06-03T20:29:35.355963",
+      "duration_seconds": 0.189192,
+      "execution_duration": 0.022084,
+      "setup_duration": 0.074519,
+      "phases_completed": 3,
+      "consultation_rounds": 5,
+      "task_success": true,
+      "artifact_correct": true,
+      "rework_needed": false,
+      "criteria_results": {
+        "file_exists": true,
+        "content_correct": true,
+        "checksum_exists": true,
+        "checksum_correct": true,
+        "manifest_exists": true,
+        "manifest_nonempty": true
+      },
+      "criteria_passed_count": 6,
+      "criteria_total_count": 6,
+      "phase_results": {
+        "phase1": {
+          "phase": 1,
+          "name": "reverse_confirmation",
+          "duration_seconds": 0.0032172203063964844,
+          "understanding": {
+            "task_id": "file-ops-real",
+            "task_name": "File Create-Write-Verify",
+            "category": "file-ops",
+            "expected_files": [
+              "output/hello.txt",
+              "checksums/hello.md5",
+              "output/manifest.txt"
+            ],
+            "criteria_count": 6,
+            "criteria": [
+              "file_exists",
+              "content_correct",
+              "checksum_exists",
+              "checksum_correct",
+              "manifest_exists",
+              "manifest_nonempty"
+            ],
+            "complexity": "low"
+          },
+          "preconditions_met": true,
+          "precondition_count": 4,
+          "confirmation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_010/bcp_phases/phase1/confirmation.json"
+        },
+        "phase2": {
+          "phase": 2,
+          "name": "consultation",
+          "duration_seconds": 0.06270813941955566,
+          "rounds": 5,
+          "issues": [],
+          "consultation_file": "/tmp/bcp-real-exp/real_C_file-ops-real_010/bcp_phases/phase2/consultation.json"
+        },
+        "phase3": {
+          "phase": 3,
+          "name": "structured_delivery",
+          "duration_seconds": 0.026313304901123047,
+          "l1_passed": true,
+          "l2_evidence_count": 3,
+          "evidence_all_exist": true,
+          "delivery_file": "/tmp/bcp-real-exp/real_C_file-ops-real_010/bcp_phases/phase3/delivery.json",
+          "verification_data": {
+            "criteria": {
+              "file_exists": true,
+              "content_correct": true,
+              "checksum_exists": true,
+              "checksum_correct": true,
+              "manifest_exists": true,
+              "manifest_nonempty": true
+            },
+            "success": true,
+            "details": {
+              "expected_bytes": 45,
+              "actual_bytes": 45,
+              "expected_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "actual_md5": "b72c3a3f8c698584c8bd52bcf7f92c8c",
+              "manifest_lines": 2
+            }
+          }
+        }
+      },
+      "execution_output": "Created 2 files\nMD5: b72c3a3f8c698584c8bd52bcf7f92c8c\n",
+      "execution_errors": "",
+      "verification_output": "{\n  \"criteria\": {\n    \"file_exists\": true,\n    \"content_correct\": true,\n    \"checksum_exists\": true,\n    \"checksum_correct\": true,\n    \"manifest_exists\": true,\n    \"manifest_nonempty\": true\n  },\n  \"success\": true,\n  \"details\": {\n    \"expected_bytes\": 45,\n    \"actual_bytes\": 45,\n    \"expected_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"actual_md5\": \"b72c3a3f8c698584c8bd52bcf7f92c8c\",\n    \"manifest_lines\": 2\n  }\n}\n",
+      "protocol": "full-bcp",
+      "tokens_used": 2013,
+      "quality_score": 1.0,
+      "artifacts_count": 6,
+      "self_inspection_passed": true
+    }
+  ],
+  "total_runs": 30,
+  "summary": {
+    "A": {
+      "run_count": 10,
+      "avg_duration": 0.0983,
+      "min_duration": 0.0912,
+      "max_duration": 0.1135,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 0.9,
+      "avg_criteria_satisfaction": 1.0
+    },
+    "B": {
+      "run_count": 10,
+      "avg_duration": 0.1025,
+      "min_duration": 0.0948,
+      "max_duration": 0.1199,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 0.95,
+      "avg_criteria_satisfaction": 1.0
+    },
+    "C": {
+      "run_count": 10,
+      "avg_duration": 0.1917,
+      "min_duration": 0.1855,
+      "max_duration": 0.1999,
+      "success_rate": 1.0,
+      "correctness_rate": 1.0,
+      "rework_rate": 0.0,
+      "avg_quality": 1.0,
+      "avg_criteria_satisfaction": 1.0
+    }
+  }
+}

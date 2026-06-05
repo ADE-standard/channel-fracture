@@ -19,7 +19,7 @@ Channel Fracture 揭示了多智能体编排系统中一个被忽视的架构盲
 
 | 版本 | 日期 | 更新内容 |
 |:----|:-----|:--------|
-| **v2** | 2026-06-04 | 扩展受控实验（525次模拟 + 90次真实运行 = 615总实验数），架构可视化增强，三级门禁验证体系全面集成 |
+| **v2** | 2026-06-04 | 扩展受控实验（210次模拟 + 99次真实运行 = 309总实验数），架构可视化增强，三级门禁验证体系全面集成 |
 | v1 | 2026-06-03 | 初始版本：210次独立实验验证 CADVP 有效性 |
 
 ## 架构对比
@@ -55,7 +55,7 @@ python demo_channel_fracture.py
 
 ## 实验验证
 
-四组受控实验（V2扩展后总计 615 次独立实验：525次模拟 + 90次真实运行）验证了 CADVP 的有效性：
+三组受控模拟实验（T3/T4/T5，总计210次）+ 四组真实运行实验（99次），合计309次独立实验验证了 CADVP 的有效性：
 
 ### 综合对比
 
@@ -79,6 +79,20 @@ python demo_channel_fracture.py
 
 ![Concurrent Comparison](experiments/visuals/concurrent_comparison.png)
 
+### 真实运行实验
+
+四组真实环境任务（文件操作、信息检索、报告生成），合计99次运行：
+
+| 实验 | 组数×迭代 | 总运行 | 任务说明 |
+|:----|:---------|:------|:--------|
+| file-ops-real | 3组×3次 | 9 | 文件创建-写入-校验 |
+| file-ops-real (ext) | 3组×10次 | 30 | 扩展文件操作 |
+| info-retrieval-real | 3组×10次 | 30 | 目录统计信息检索 |
+| report-gen-real | 3组×10次 | 30 | 报告生成 |
+| **合计** | | **99** | |
+
+真实运行数据详见 [`experiments/real-runs/`](experiments/real-runs/)。
+
 ## 模块说明
 
 | 目录 | 说明 |
@@ -86,8 +100,9 @@ python demo_channel_fracture.py
 | [`papers/`](papers/) | 论文PDF — 包含已发表版本（v2） |
 | [`mvp/`](mvp/) | 最小可复现示例 — 包含 Channel Fracture 演示脚本、模拟代理、内存守卫和 CADVP 验证协议 |
 | [`docs/`](docs/) | 技术文档 — CADVP v1.1 规范文档（含三级门禁体系）和系统架构说明 |
-| [`experiments/`](experiments/) | 实验数据 — 并发冲突检测、回滚安全、信息中继三组实验的完整结果和可视化图表 |
+| [`experiments/`](experiments/) | 实验数据 — 三组受控模拟实验（T3/T4/T5，210次）和四组真实运行实验（99次）的完整结果及可视化图表 |
 | [`gen_charts.py`](gen_charts.py) | 实验数据可视化图表生成脚本（Matplotlib） |
+| [`experiments/real-runs/`](experiments/real-runs/) | 真实运行实验原始数据（99次） |
 
 ### MVP 子模块
 
