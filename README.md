@@ -2,8 +2,10 @@
 
 **Channel Fracture: Architectural Blind Spots in Scheduled Cross-Agent Memory Injection for Multi-Agent Orchestration Systems**
 
-📄 Paper: [arXiv:2606.04896](https://arxiv.org/abs/2606.04896)  
-👤 Author: Dexing Liu (刘德星)
+📄 Paper: [arXiv:2606.04896](https://arxiv.org/abs/2606.04896) (v2, 2026-06-04)  
+📥 PDF: [papers/channel-fracture-v2.pdf](papers/channel-fracture-v2.pdf)  
+👤 Author: Dexing Liu (刘德星)  
+🏢 Affiliation: Shanghai Qijing Digital Technology Co., Ltd.
 
 ---
 
@@ -12,6 +14,13 @@
 Channel Fracture 揭示了多智能体编排系统中一个被忽视的架构盲区：当调度代理（Scheduler Agent）通过定时任务向目标代理（Target Agent）注入持久化内存时，由于 `skip_memory=True` 守卫机制的存在，写入操作会被静默丢弃，导致信息通道断裂。
 
 本仓库提供该问题的**最小可复现示例（MVP）**、**CADVP（Cross-Agent Delivery Verification Protocol）修复方案**、**ADE 三级门禁验证体系**，以及完整的实验数据。
+
+## 版本说明
+
+| 版本 | 日期 | 更新内容 |
+|:----|:-----|:--------|
+| **v2** | 2026-06-04 | 扩展受控实验（525次模拟 + 90次真实运行 = 615总实验数），架构可视化增强，三级门禁验证体系全面集成 |
+| v1 | 2026-06-03 | 初始版本：210次独立实验验证 CADVP 有效性 |
 
 ## 架构对比
 
@@ -46,7 +55,7 @@ python demo_channel_fracture.py
 
 ## 实验验证
 
-三组受控实验（总计 210 次独立实验）验证了 CADVP 的有效性：
+四组受控实验（V2扩展后总计 615 次独立实验：525次模拟 + 90次真实运行）验证了 CADVP 的有效性：
 
 ### 综合对比
 
@@ -74,9 +83,11 @@ python demo_channel_fracture.py
 
 | 目录 | 说明 |
 |------|------|
+| [`papers/`](papers/) | 论文PDF — 包含已发表版本（v2） |
 | [`mvp/`](mvp/) | 最小可复现示例 — 包含 Channel Fracture 演示脚本、模拟代理、内存守卫和 CADVP 验证协议 |
 | [`docs/`](docs/) | 技术文档 — CADVP v1.1 规范文档（含三级门禁体系）和系统架构说明 |
 | [`experiments/`](experiments/) | 实验数据 — 并发冲突检测、回滚安全、信息中继三组实验的完整结果和可视化图表 |
+| [`gen_charts.py`](gen_charts.py) | 实验数据可视化图表生成脚本（Matplotlib） |
 
 ### MVP 子模块
 
@@ -89,7 +100,7 @@ python demo_channel_fracture.py
 
 **All Rights Reserved.** Copyright (c) 2026 Dexing Liu / Shanghai Qijing Digital Technology Co., Ltd.
 
-学术研究可自由使用、修改、复制。商业用途请联系作者获取授权。作者保留所有权利，包括专利申请权。
+学术研究可自由使用、修改、复制。商业用途（包括但不限于：集成到商业产品、提供商业服务、作为商业项目的一部分）必须获得作者的明确书面授权。作者保留所有权利，包括专利申请权。
 
 详见 [LICENSE](LICENSE) 和 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
