@@ -21,6 +21,9 @@ These case studies serve as empirical evidence for the ADE framework, demonstrat
 | Case ID | Date | Type | Repository | Severity | Description |
 |---------|------|------|------------|----------|-------------|
 | [CF-001](./CF-001-email-auto-reply.md) | 2026-06-17 | CF | Hermes Agent | Critical | Email Gateway auto-reply without human review |
+| [CF-002](./CF-002-cron-memory-channel-fracture.md) | 2026-06-13 | CF | Hermes Agent | Critical | Cron agents silently lose memory write capability |
+| [CF-003](./CF-003-cron-approval-deadlock.md) | 2026-05-30 | CF | Hermes Agent | High | Cron jobs fail silently due to tool approval deadlock |
+| [DD-001](./DD-001-context-compression-data-loss.md) | 2026-06-16 | DD | Hermes Agent | Critical | Context compression silently loses unflushed messages |
 
 ## How to Contribute
 
